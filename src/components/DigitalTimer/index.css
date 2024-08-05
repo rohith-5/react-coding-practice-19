@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+.container {
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #cffcf1,
+    #cffcf1,
+    #cffcf1
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  .container {
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff,
+      #cffcf1,
+      #cffcf1,
+      #cffcf1,
+      #cffcf1
+    );
+    padding: 10px 40px;
+    gap: 20px;
+  }
+}
+
+.heading {
+  color: #0f172a;
+  font-size: 35px;
+  margin-top: 60px;
+}
+@media (max-width: 768px) {
+  .heading {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.img-card {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .img-card {
+    height: 260px;
+    width: 260px;
+  }
+}
+
+.timer-card {
+  background-color: white;
+  border-radius: 80px;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+@media (max-width: 768px) {
+  .timer-card {
+    height: 90px;
+    width: 90px;
+    gap: 2px;
+  }
+}
+
+.timer {
+  color: #00d9f5;
+  font-size: 30px;
+  font-weight: bold;
+}
+.status {
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .timer {
+    font-size: 23px;
+  }
+  .status {
+    font-size: 12px;
+  }
+}
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.status-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.status-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  margin-right: 5px;
+}
+.status-img {
+  width: 30px;
+}
+@media (max-width: 768px) {
+  .status-img {
+    width: 23px;
+  }
+}
+
+.start {
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+.para {
+  color: #1e293b;
+  font-size: 9px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.btn-card {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  gap: 15px;
+}
+.operator {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: bold;
+}
+.timer-btn {
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #00d9f5;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 15px;
+}
+@media (max-width: 768px) {
+  .timer-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
